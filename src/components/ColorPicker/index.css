@@ -1,0 +1,29 @@
+.color-picker__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.color-picker__input-wrapper {
+  display: flex;
+}
+
+.color-picker__container input[type='color'] {
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-appearance: none;
+  appearance: none;
+  margin-right: 0.8rem;
+}
+
+.color-picker__container input[type='color']::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.color-picker__container input[type='color']::-webkit-color-swatch {
+  border-radius: 50%;
+}

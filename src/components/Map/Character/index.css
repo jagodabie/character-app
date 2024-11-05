@@ -1,0 +1,22 @@
+.character__container {
+  position: absolute;
+  text-align: center;
+  padding: 1rem;
+}
+
+.character__name {
+  margin: 0;
+  font-weight: bold;
+}
+
+.character__avatar {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0.5rem auto;
+  border: solid 1px black;
+}
+
+.character__name {
+  color: black;
+}

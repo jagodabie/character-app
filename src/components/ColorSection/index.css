@@ -1,0 +1,4 @@
+.color-section__container {
+  display: flex;
+  gap: 1rem;
+}

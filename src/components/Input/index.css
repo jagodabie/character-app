@@ -1,0 +1,13 @@
+.input__container {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type='text'] {
+  height: 2rem;
+  border: 1px solid #000;
+}
+
+input[type='text']:focus {
+  outline: 0.5px solid #000;
+}

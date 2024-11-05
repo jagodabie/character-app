@@ -1,0 +1,7 @@
+.map {
+  position: relative;
+  width: 100%;
+  padding-right: 1rem;
+  border-left: solid 1px rgb(86, 84, 84);
+  min-height: calc(100vh - 4rem);
+}
