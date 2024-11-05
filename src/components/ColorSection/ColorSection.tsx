@@ -19,7 +19,7 @@ export const ColorSection = ({
   <div className="color-section__container">
     <ColorPicker
       color={color}
-      label="Wybierz kolor postaci: "
+      label="Wybierz kolor postaci:"
       onColorChange={setColor}
       colorName={colorName}
       colorNameLabel="Nazwa koloru"

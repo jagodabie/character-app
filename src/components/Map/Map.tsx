@@ -7,6 +7,7 @@ import './index.css';
 export const Map: React.FC = () => {
   const { name, color } = useCharacter();
   const position = useCharacterMovement();
+
   return (
     <div
       className="map"

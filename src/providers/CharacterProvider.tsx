@@ -1,5 +1,5 @@
 import React, { createContext, useState, ReactNode, useContext } from 'react';
-import useFetchColor from '../hooks/useFetchColor';
+import { useFetchColor } from '../hooks/useFetchColor';
 
 type CharacterContextProps = {
   name: string;

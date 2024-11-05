@@ -22,9 +22,9 @@ Ten projekt to aplikacja internetowa, która pozwala użytkownikom tworzyć i ko
 
 1.  **Sklonuj Repozytorium**
 
-    git clone https://github.com/username/color-picker-character-app
+    git clone https://github.com/jagodabie/character-app.git
 
-    cd color-picker-character-app
+    cd character-app
 
 2.  **Zainstaluj Zależności**
 
@@ -41,7 +41,7 @@ Ten projekt to aplikacja internetowa, która pozwala użytkownikom tworzyć i ko
 1. Otwórz aplikację w przeglądarce pod adresem http://localhost:5173.
 2. Wprowadź nazwę postaci w polu tekstowym.
 3. Wybierz kolor postaci za pomocą przycisku wyboru koloru.
-4. Kliknij „Zatwierdź”, aby wyświetlić postać na mapie z wybraną nazwą i kolorem.
+4. Po wybraniu koloru i nazwy, postać pojawia się na mapie.
 5. Użyj klawiszy strzałek, aby przesuwać postać po mapie (postać nie przesunie się w lewo, jeśli osiągnie granicę mapy).
 
 ## Zależności

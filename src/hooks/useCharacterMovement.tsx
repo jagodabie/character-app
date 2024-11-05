@@ -11,28 +11,20 @@ export const useCharacterMovement = (
   const [position, setPosition] = useState<Position>(initialPosition);
 
   const handleKeyDown = (e: KeyboardEvent) => {
-    setPosition((prevPosition) => {
-      const newPosition = { ...prevPosition };
+    const positionChanges: Record<string, Position> = {
+      ArrowUp: { x: 0, y: -10 },
+      ArrowDown: { x: 0, y: 10 },
+      ArrowLeft: { x: -10, y: 0 },
+      ArrowRight: { x: 10, y: 0 },
+    };
 
-      switch (e.key) {
-        case 'ArrowUp':
-          newPosition.y = Math.max(prevPosition.y - 10, 0);
-          break;
-        case 'ArrowDown':
-          newPosition.y = Math.min(prevPosition.y + 10);
-          break;
-        case 'ArrowLeft':
-          newPosition.x = Math.max(prevPosition.x - 10, 0);
-          break;
-        case 'ArrowRight':
-          newPosition.x = Math.min(prevPosition.x + 10);
-          break;
-        default:
-          return prevPosition;
-      }
-
-      return newPosition;
-    });
+    if (e.key in positionChanges) {
+      const change = positionChanges[e.key];
+      setPosition((prevPosition) => ({
+        x: Math.max(prevPosition.x + change.x, 0),
+        y: Math.max(prevPosition.y + change.y, 0),
+      }));
+    }
   };
 
   useEffect(() => {
